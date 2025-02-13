@@ -62,90 +62,88 @@ PC用のスタイル
 
 @media screen and (max-width: 767px) {
 
+  body { 
+    min-width: 375px;
+    margin: 0;
+  }
+
   #nav-pc {
     display: none;
-}
+  }
 
- body {
-  min-width: 375px;
-  margin: 0;
- }
+  #menu-sp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url("images/menu-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
 
- #nav-pc {
-  display: none;
- }
+  #nav-sp {
+    background-color: #de933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
 
- #menu-sp {
-  float: right;
-  padding: 0;
- }
+  #nav-sp ul {
+    padding-left: 0;
+  }
 
- #nav-sp {
-  background-color: #de933e;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: none;
-  z-index: 100;
- }
+  #nav-sp li {
+    list-style: none;
+  }
 
- #nav-sp ul {
-  padding-left: 0;
- }
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
 
- #nav-sp li {
-  list-style: none;
- }
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
 
- #close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
- }
+  #nav-sp a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
 
- #logo-sp {
-  margin: 80px 0 30px 20px;
- }
+  #nav-sp a:link {
+    color: #ffffff;
+  }
 
- #nav-sp a {
-  display: block;
- }
+  #nav-sp a:visited {
+    color: #ffffff;
+  }
 
- #nav-sp a:link {
-  color: #ffffff;
- }
+  #nav-sp a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
 
- #nav-sp a:visited {
-  color: #ffffff;
- }
+  #nav-sp a:active {
+    color: #ffffff;
+  }
 
- #nav-sp a:hover {
-  color: #ffffff;
-  text-decoration: underline;
- }
-
- #nav-sp a:active {
-  color: #ffffff;
- }
-
- #nav-sp .menu {
-  text-decoration: none;
-  display: block;
-  margin:0 20px 0 20px;
-  height: 44px;
-  font-size: 16px;
-  background-image: url("images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: right top;
- }
-
- #menu-sp {
-  display: none;
-}
-
-#nav-sp {
-  display: none;
-}
+  #nav-sp .menu {
+    text-decoration: none;
+    display: block;
+    margin:0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }
